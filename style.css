@@ -1,37 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-.container-fluid{
-    width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(135deg,#153677,#4e085f);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+body, html {
+    height: 100%;
 }
-.to-do-app{
-    min-width:400px;
-    height: auto;
-    background-color: aliceblue;
-    border-radius: 15px;
+
+.container-fluid {
+    height: 100vh;
+    background-image: linear-gradient(135deg, #153677, #4e085f);
+    position: relative;
 }
-.to-do-app h2{
-    font-size: 40px;
+
+.card {
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-header h2 {
+    font-size: 2rem;
     color: #153677;
 }
-#add-btn{
+
+.card-body .btn-primary {
     border-radius: 10px;
     border: none;
-    outline: none;
-    color: aliceblue;
-    background-color:#4e085f;
+    color: #fff;
+    background-color: #4e085f;
+    cursor: pointer;
+
 }
-input{
+.card-body .btn-primary:hover,.btn-primary:active,.btn-primary:visited {
+    background-color: #601373 !important;
+}
+
+input[type=text]{
     border-radius: 4px;
-    
+    padding: 0.5rem;
+    border: 0.5px solid #153677;
+    outline-offset: none;
+
 }
