@@ -12,13 +12,15 @@ body, html {
 }
 
 .container-fluid {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
     background-image: linear-gradient(135deg, #153677, #4e085f);
     position: relative;
 }
 
 .card {
     position: absolute;
+    margin-top: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    
 }
@@ -46,4 +48,22 @@ input[type=text]{
     border: 0.5px solid #153677;
     outline-offset: none;
 
+}
+li{
+    cursor: pointer;
+    list-style: none;
+    background-color:#153677;
+    color: #fff;
+    margin:3px 0px;
+    border-radius: 6px ;
+    padding: 5px 10px;
+}
+li:hover{
+    background-color: #4e085f;
+    box-shadow: 1px 1px 2px #f42323;
+}
+.delete-icon{
+    cursor: pointer;
+    height: 16px;
+    float: right;
 }
